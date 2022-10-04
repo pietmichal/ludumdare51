@@ -62,7 +62,13 @@ void resolveCollisions(BulletManager* bulletManager, EnemyManager* enemyManager,
 
 		if (isPointInCircle(ship->position, enemyManager->enemies[i]->position, ENEMY_SHIP_RADIUS))
 		{
-			ship->alive = false;
+			if (ship->speed >= 1500.0f)
+			{
+				enemyManager->enemies[i]->life = 0;
+			}
+			else {
+				ship->alive = false;
+			}
 			break;
 		}
 

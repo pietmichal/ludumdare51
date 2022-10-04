@@ -29,12 +29,12 @@ SDL_Texture* loadTexture(SDL_Renderer* renderer, const char path[])
 
 void loadAssets(SDL_Renderer* renderer)
 {
-	assets.ship = loadTexture(renderer, "C:/users/harsa/Desktop/ship.png");
-	assets.bullet = loadTexture(renderer, "C:/users/harsa/Desktop/bullet.png");
-	assets.bullet2 = loadTexture(renderer, "C:/users/harsa/Desktop/bullet2.png");
-	assets.enemy = loadTexture(renderer, "C:/users/harsa/Desktop/enemy.png");
-	assets.enemyHit = loadTexture(renderer, "C:/users/harsa/Desktop/enemyHit.png");
-	assets.font8pt = TTF_OpenFont("C:/users/harsa/Desktop/PressStart2P-vaV7.ttf", 8);
-	assets.mediumFont = TTF_OpenFont("C:/users/harsa/Desktop/PressStart2P-vaV7.ttf", 12);
-	assets.largeFont = TTF_OpenFont("C:/users/harsa/Desktop/PressStart2P-vaV7.ttf", 24);
+	assets.ship = loadTexture(renderer, "ship.png");
+	assets.bullet = loadTexture(renderer, "bullet.png");
+	assets.bullet2 = loadTexture(renderer, "bullet2.png");
+	assets.enemy = loadTexture(renderer, "enemy.png");
+	assets.enemyHit = loadTexture(renderer, "enemyHit.png");
+	assets.font8pt = TTF_OpenFont("PressStart2P-vaV7.ttf", 8);
+	assets.mediumFont = TTF_OpenFont("PressStart2P-vaV7.ttf", 12);
+	assets.largeFont = TTF_OpenFont("PressStart2P-vaV7.ttf", 24);
 }

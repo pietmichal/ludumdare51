@@ -50,8 +50,7 @@ Enemy* createEnemy(float x = 0, float y = 0)
 	enemy->rotation = 0;
 	enemy->speed = 100.0f;
 
-	// difficulty based?
-	enemy->life = random(3, 10);
+	enemy->life = 3;
 
 	enemy->type = getEnemyType();
 
@@ -348,9 +347,9 @@ void updateEnemyManager(EnemyManager* manager, BulletManager* bulletManager, Shi
 
 	if (manager->timeUntilNextWave <= 0)
 	{
-		manager->timeUntilNextWave += 7.0f;
+		manager->timeUntilNextWave += 10.0f;
 
-		for (int i = 0; i < 30; i++)
+		for (int i = 0; i < 15; i++)
 		{
 			Vector2f v = getRandomEnemyPosition(ship);
 			addEnemy(manager, createEnemy(v.x, v.y));
